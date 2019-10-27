@@ -9,7 +9,7 @@ const SubTitle = ({title}) => (
 
 const Styles = StyleSheet.create({
     subTitleText : {
-        color: "#3f4e66",
+        color: "#ffdd4f",
         fontSize: 18,
         fontWeight : 'bold',
     }

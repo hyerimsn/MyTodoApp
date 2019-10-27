@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, AsyncStorage } from 'react-native';
+import { StyleSheet, Text, View, FlatList, ImageBackground, AsyncStorage } from 'react-native';
 import Header from './app/components/Header';
 import SubTitle from './app/components/SubTitle';
 import Input from './app/components/InputBox';
@@ -73,7 +73,7 @@ componentWillMount(){
 
   render() {
   return (
-    <View style={Styles.container}>
+    <ImageBackground source={require('./app/components/pengpeng.jpg')} style={{width: '100%', height: '100%' }}>
       <View style={Styles.headercentered}>
         <Header/>
       </View>
@@ -93,18 +93,20 @@ componentWillMount(){
         renderItem={this._makeTodoItem}
         keyExtractor={(item, index) => {return '${index}'}}/>
       </View>
-    </View>
-  );
-}
+    </ImageBackground>
+  )
+  };
 };
 
 const Styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+
   headercentered: {
     alignItems : 'center',
   },
+  
   subContainer: {
     marginLeft:20,
   },

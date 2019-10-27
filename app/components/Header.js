@@ -15,7 +15,7 @@ const Styles = StyleSheet.create({
     headerText: {
         fontSize: 26,
         fontWeight: 'bold',
-        color: '#3f4e66',
+        color: '#3200c2',
     },
 });
 
